@@ -32,4 +32,27 @@ static inline void ppm_image_setpixel(struct ppm_image *im, int x, int y,
 
 int ppm_image_dump(struct ppm_image *im, char *path);
 
+/*
+Le fichier `ppm.h` fournit les structures et fonctions pour manipuler des images au format PPM :
+
+- struct ppm_pixel : Représente un pixel avec des composantes rouge (r), verte (g) et bleue (b).
+
+- struct ppm_image: Contient les dimensions de l'image (largeur et hauteur) et un tableau de pixels.
+
+Fonctions principales :
+
+- ppm_image_init : Initialise une image avec des dimensions spécifiées.
+
+- ppm_image_release : Libère la mémoire allouée à une image.
+
+- ppm_image_dump : Enregistre l'image dans un fichier au format PPM.
+
+Fonctions d'aide :
+
+- ppm_setpixel: Définit la couleur d'un pixel.
+
+- ppm_image_setpixel : Définit la couleur d'un pixel dans l'image à des coordonnées spécifiques.
+*/
+
 #endif /* PPM_H */
+
